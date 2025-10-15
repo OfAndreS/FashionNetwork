@@ -4,7 +4,7 @@ import tensorflow as tf
 from keras import layers
 from tensorflow import keras
 
-from src.shared import utils as utils
+from shared import utils as utils
 
 def trainModel():
     FashionMNIST = tf.keras.datasets.fashion_mnist

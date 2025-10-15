@@ -15,11 +15,8 @@ def startMenu():
                 return
             case '2':
                 model.trainModel()
-                return
             case '0':
-                utils.printHead()
-                print("| Saindo...")
-                utils.printHead()
+                print("\n| Saindo...")
                 return
             case _:
                 print("| Opção não definida!!!")
