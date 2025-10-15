@@ -22,5 +22,6 @@ def startMenu():
                 print("| Opção não definida!!!")
 
 if __name__ == "__main__":
+    
     startMenu()
     
