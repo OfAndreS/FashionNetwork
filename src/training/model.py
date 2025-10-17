@@ -24,11 +24,18 @@ def trainModel():
 
 
     model = keras.Sequential([
-        layers.Input(shape=(784,)), 
+        # Esta camada define que a entrada é uma imagem 2D (28x28).
+        layers.Input(shape=(28, 28)), 
+
+        # A camada Flatten transforma a imagem 2D em um vetor 1D (784,).
+        layers.Flatten(), 
+
+        # Agora a camada Dense pode receber o vetor 1D.
         layers.Dense(128, activation='relu'), 
-        layers.Dense(10, activation='softmax') # Camada de saída
+        layers.Dense(10, activation='softmax')
     ])
 
+    model.summary()
     utils.printHead()
 
     model.summary()
